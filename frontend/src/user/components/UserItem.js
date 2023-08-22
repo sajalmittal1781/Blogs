@@ -12,7 +12,7 @@ const UserItem = (props) => {
         <Link to={`/${props.id}/blogs`}>
           <div className="user-item__image">
             <Avatar
-              image={`http://localhost:5000/${props.image}`}
+              image={`https://mern-l4s5.onrender.com/${props.image}`}
               alt={props.name}
             />
           </div>

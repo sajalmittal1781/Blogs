@@ -16,7 +16,7 @@ const UserBlogs = () => {
     const fetchBlogs = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/blogs/user/${userId}`
+          `https://mern-l4s5.onrender.com/api/blogs/user/${userId}`
         );
         setLoadedBlogs(responseData.blogs);
       } catch (err) {}

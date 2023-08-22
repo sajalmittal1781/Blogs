@@ -40,7 +40,7 @@ const UpdateBlog = () => {
     const fetchBlog = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/blogs/${blogId}`
+          `https://mern-l4s5.onrender.com/api/blogs/${blogId}`
         );
         setLoadedBlog(responseData.blog);
         setFormData(
@@ -65,7 +65,7 @@ const UpdateBlog = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/blogs/${blogId}`,
+        `https://mern-l4s5.onrender.com/api/blogs/${blogId}`,
         "PATCH",
         JSON.stringify({
           title: formState.inputs.title.value,

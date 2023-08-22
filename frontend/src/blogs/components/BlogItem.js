@@ -26,7 +26,7 @@ const BlogItem = (props) => {
     setShowConfirmModal(false);
     try {
       await sendRequest(
-        `http://localhost:5000/api/blogs/${props.id}`,
+        `https://mern-l4s5.onrender.com/api/blogs/${props.id}`,
         "DELETE"
       );
       props.onDelete(props.id);

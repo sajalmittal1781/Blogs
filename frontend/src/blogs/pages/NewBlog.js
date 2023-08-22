@@ -40,7 +40,7 @@ const NewBlog = () => {
       formData.append("title", formState.inputs.title.value);
       formData.append("description", formState.inputs.description.value);
       formData.append("creator", auth.userId);
-      await sendRequest("http://localhost:5000/api/blogs", "POST", formData);
+      await sendRequest("https://mern-l4s5.onrender.com/api/blogs", "POST", formData);
       history.push("/");
     } catch (err) {}
   };
